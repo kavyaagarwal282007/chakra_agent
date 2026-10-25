@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline": "#737786", "on-error-container": "#93000a", "surface-tint": "#0057cf", "inverse-surface": "#1d3052", "primary": "#0054ca", "surface-bright": "#f9f9ff", "on-tertiary-fixed": "#002111", "surface-container": "#e8edff", "on-secondary-fixed": "#180065", "on-background": "#041b3c", "outline-variant": "#c2c6d7", "primary-fixed": "#dae2ff", "secondary-container": "#9485ff", "secondary-fixed": "#e5deff", "primary-fixed-dim": "#b1c5ff", "on-tertiary": "#ffffff", "on-error": "#ffffff", "surface-container-lowest": "#ffffff", "tertiary-container": "#008655", "on-secondary-fixed-variant": "#4330aa", "surface-container-highest": "#d7e2ff", "tertiary-fixed": "#80fab9", "background": "#f9f9ff", "surface-variant": "#d7e2ff", "on-primary-fixed-variant": "#00419f", "surface-dim": "#cadaff", "on-tertiary-fixed-variant": "#005232", "error-container": "#ffdad6", "on-secondary-container": "#2a0992", "on-tertiary-container": "#f6fff6", "surface": "#f9f9ff", "secondary-fixed-dim": "#c7bfff", "error": "#ba1a1a", "on-surface": "#041b3c", "tertiary-fixed-dim": "#62dd9e", "tertiary": "#006a42", "secondary": "#5c4bc3", "on-surface-variant": "#424654", "primary-container": "#2b6eeb", "on-primary-fixed": "#001946", "surface-container-high": "#e0e8ff", "on-primary": "#ffffff", "inverse-primary": "#b1c5ff", "on-secondary": "#ffffff", "on-primary-container": "#fefcff", "inverse-on-surface": "#edf0ff", "surface-container-low": "#f1f3ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-desktop": "3rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "gutter-lg": "2rem", "space-md": "1rem", "gutter": "1.5rem", "gutter-sm": "1rem", "margin": "2rem", "margin-mobile": "1rem", "space-xl": "2.5rem" }, "fontFamily": { "headline-md": ["Inter"], "body-md": ["Inter"], "label-lg": ["Inter"], "label-md": ["Inter"], "headline-sm": ["Inter"], "label-sm": ["Inter"], "body-sm": ["Inter"], "body-lg": ["Inter"], "headline-xl-mobile": ["Inter"], "headline-lg-mobile": ["Inter"], "headline-lg": ["Inter"], "headline-xl": ["Inter"] }, "fontSize": { "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.005em", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-xl-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }] } } } }</script><style>@layer base { html, body { width: 100%; min-height: 100%; margin: 0; padding: 0; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(4,27,60,0.04)]"><div class="h-16 px-space-sm flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs min-w-0 flex-1"><button aria-label="Go back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors flex-shrink-0" onclick="history.back()"><span class="material-symbols-outlined text-[20px]">arrow_back_ios_new</span></button><img alt="Chakra Agent Logo" class="h-7 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1X28sLcJTTJQ90uzD1iUZ1mOC3_lmNHDXq92M4P1sXVBSoOpBWgHkAZBruxa7vJbigJ_7yjrdEnrF8B5wuZYLQ-j3FLUIowwWWyF02WTUb0Dedl4AK2WPxzi5Y2aFvS01oS4ThIP3g313Cl_cOrA34XhFTuKuRVpM_OXocqIj1tb4oAtJPnnYrL_weAmBFjfO09C_k9EpAiXRNI1fowRifINbBjrRZIq2Ua3DTz6rTrMkaouCJZVoaoEO4"/><div class="flex flex-col min-w-0"><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Review Release</h1></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px]">commit</span>main</span><button aria-label="User Profile" class="w-11 h-11 flex items-center justify-center rounded-full"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAl1oFo82wm0j60xsWWe4D19CYHRR2FQVv-CY1ppYw2FjJ0itMzxR9Ef-AJpAlnlbyNvOe8AiIM2bGzIp2zygHcVWdS-_DJKzj8g8dTT1soepTapNwK1GpNs84_KN_JoaVWI71DhCA8Cuj8_L9qrsTyGp8j4H48kc8-JbPo9stzQ7By3PP4Qu8HggFtn0UXfwipjAWy0mNHds_9RtsoHtLx7snAWe3gUktSHONO0JEVxarncZBjNKrZPg"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 bg-surface"><div class="flex flex-col w-full pb-safe">
+<!-- Interactive Canvas Root -->
+<div class="px-space-md py-space-md flex flex-col gap-space-md">
+<!-- Top Navigation & Context Bar -->
+<div class="flex items-center justify-between gap-space-xs">
+<button class="inline-flex items-center gap-1.5 py-2 px-3 rounded-full bg-surface-container hover:bg-surface-container-high transition-colors text-on-surface" onclick="history.back()">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span class="font-label-md text-label-md">Back to Workspace</span>
+</button>
+<!-- Simulated Decision Sandbox Tag -->
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+        Simulated Sandbox
+      </span>
+</div>
+<!-- Screen Title & Narrative Greeting -->
+<div class="flex flex-col gap-1 mt-1">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Review Before Release</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Check the automated results before approving your changes into production pipeline.</p>
+</div>
+<!-- Readiness Hero Spotlight Banner -->
+<div class="rounded-xl p-space-md bg-tertiary text-on-tertiary shadow-md relative overflow-hidden flex flex-col gap-3">
+<!-- Background Ambient Target Geometry (inspired by brand icon) -->
+<svg class="absolute -right-6 -bottom-6 w-36 h-36 opacity-15 pointer-events-none" fill="none" stroke="currentColor" viewbox="0 0 100 100">
+<circle cx="50" cy="50" r="42" stroke-dasharray="6 6" stroke-width="4"></circle>
+<circle cx="50" cy="50" r="28" stroke-width="5"></circle>
+<circle cx="50" cy="50" r="14" stroke-width="4"></circle>
+<path d="M50 15v16M50 69v16M15 50h16M69 50h16" stroke-linecap="round" stroke-width="4"></path>
+</svg>
+<div class="flex items-center justify-between z-10">
+<div class="inline-flex items-center gap-2 bg-on-tertiary/15 px-3 py-1 rounded-full text-on-tertiary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">task_alt</span>
+          Release Gate Ready
+        </div>
+<span class="font-label-sm text-label-sm bg-tertiary-container text-on-tertiary-container px-2.5 py-0.5 rounded-full font-semibold">100% Verified</span>
+</div>
+<div class="z-10">
+<h3 class="font-headline-sm text-headline-sm text-on-tertiary flex items-center gap-2">
+<span>5/5 Checks Passed</span>
+<span class="text-tertiary-fixed font-normal text-body-md">• Safe to Ship</span>
+</h3>
+<p class="font-body-sm text-body-sm text-on-tertiary/90 mt-0.5">Automated recovery resolved 1 failing test suite. Sandbox snapshot verified clean.</p>
+</div>
+<!-- Quick Micro Progress Indicator Bar -->
+<div class="w-full bg-on-tertiary/20 h-1.5 rounded-full overflow-hidden z-10 flex">
+<div class="bg-tertiary-fixed h-full rounded-full transition-all duration-700 w-full"></div>
+</div>
+</div>
+<!-- Release Overview Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">dns</span>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Target Service</span>
+<span class="font-label-lg text-label-lg text-on-surface">Account Service (v2.4.1)</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">High Priority</span>
+</div>
+<!-- Feature Name & Description -->
+<div class="bg-surface-container-low rounded-lg p-3 flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Feature Spec</span>
+<p class="font-body-md text-body-md text-on-surface font-medium">Password-reset feature with email verification token lifecycle</p>
+</div>
+<!-- Git Topology Branching Node -->
+<div class="flex items-center gap-2 pt-1 text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5 bg-surface-container px-2.5 py-1.5 rounded-lg flex-1 min-w-0">
+<span class="material-symbols-outlined text-[16px] text-primary">merge_type</span>
+<span class="text-on-surface font-mono truncate">main ← feat/password-reset</span>
+</div>
+<span class="bg-surface-container-high px-2 py-1.5 rounded-lg font-mono text-on-surface text-[11px] flex-shrink-0">#e4f9b2a</span>
+</div>
+</div>
+<!-- Verification Checklist Section Header -->
+<div class="flex items-center justify-between pt-1">
+<h3 class="font-label-lg text-label-lg text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[20px]">fact_check</span>
+        Automated Verification Trail
+      </h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Live Sandbox Logs</span>
+</div>
+<!-- Verification Checklist (Interactive Cards) -->
+<div class="flex flex-col gap-2.5">
+<!-- Check Item 1: Code Review & Diff -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm transition-all hover:shadow-md flex flex-col gap-2">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-tertiary/10 text-tertiary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface">Code changes reviewed</span>
+<span class="font-label-sm text-label-sm text-tertiary bg-tertiary/10 px-2 py-0.5 rounded-full">Passed</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">2 files changed (+142, -6 lines). Clean TypeScript lint formatting verified.</p>
+</div>
+</div>
+<!-- Inline Diff Drawer Action -->
+<div class="pl-11 pr-1 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center text-[11px] font-mono text-tertiary bg-surface-container px-2 py-0.5 rounded">+142</span>
+<span class="inline-flex items-center text-[11px] font-mono text-error bg-error-container/40 px-2 py-0.5 rounded">-6</span>
+</div>
+<button class="font-label-md text-label-md text-primary flex items-center gap-0.5 py-1 px-2 rounded-lg hover:bg-surface-container transition-colors" onclick="document.getElementById('diffModal').classList.remove('hidden')">
+<span>View Code Diff</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Check Item 2: Test Suite (with Recovery badge) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm transition-all hover:shadow-md flex flex-col gap-2">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-tertiary/10 text-tertiary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface">Required tests passed</span>
+<span class="font-label-sm text-label-sm text-tertiary bg-tertiary/10 px-2 py-0.5 rounded-full">24 / 24</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Unit &amp; integration tests executing clean in isolated mock db sandbox.</p>
+<!-- Automated Recovery Note -->
+<div class="mt-2 flex items-center gap-2 p-2 rounded-lg bg-surface-container-high text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">auto_fix_high</span>
+<span class="font-label-sm text-label-sm flex-1"><strong class="font-semibold text-secondary">Auto-Recovered:</strong> 1 timeout assertion patched in <code class="font-mono text-[11px]">tokenExpiry.spec.ts</code></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Check Item 3: Security Scan -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm transition-all hover:shadow-md flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-tertiary/10 text-tertiary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface">Security checks reviewed</span>
+<span class="font-label-sm text-label-sm text-tertiary bg-tertiary/10 px-2 py-0.5 rounded-full">OWASP Clean</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">OWASP Top 10 clear. Safe cryptographic hashing (SHA-256 + salt) used for password tokens.</p>
+</div>
+</div>
+<!-- Check Item 4: Product Requirements -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm transition-all hover:shadow-md flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-tertiary/10 text-tertiary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface">Requirements verified</span>
+<span class="font-label-sm text-label-sm text-tertiary bg-tertiary/10 px-2 py-0.5 rounded-full">4 / 4 Specs</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">All 4 acceptance criteria from Product Agent verified via automated browser replay.</p>
+</div>
+</div>
+<!-- Check Item 5: Unresolved Incidents -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm transition-all hover:shadow-md flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-tertiary/10 text-tertiary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface">Blocking incidents</span>
+<span class="font-label-sm text-label-sm text-tertiary bg-tertiary/10 px-2 py-0.5 rounded-full">0 Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Zero runtime exceptions, unhandled rejections, or memory leaks detected.</p>
+</div>
+</div>
+</div>
+<!-- Compliance & Policy Advisory Note -->
+<div class="rounded-xl p-space-sm bg-surface-container-low flex items-start gap-2.5">
+<span class="material-symbols-outlined text-outline text-[18px] mt-0.5">shield</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+<strong class="font-semibold text-on-surface">Governance Policy:</strong> Human authorization is required for identity &amp; authentication changes. All sandbox build telemetry and AI decision traces are cryptographically signed.
+      </p>
+</div>
+<!-- Visual Divider & Space -->
+<div class="h-1"></div>
+<!-- Sticky / Pinned Release Action Drawer -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Gatekeeper Action</span>
+<span class="text-tertiary flex items-center gap-1 font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+          Ready to Ship
+        </span>
+</div>
+<!-- Primary Release Approval CTA -->
+<button class="w-full h-12 bg-primary hover:bg-primary-container text-on-primary rounded-xl font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md active:scale-[0.98] transition-all" onclick="document.getElementById('confirmationModal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">lock_open</span>
+<span>Approve Release &amp; Merge</span>
+</button>
+<!-- Secondary Request Changes CTA -->
+<button class="w-full h-11 bg-surface-container hover:bg-surface-container-high text-on-surface rounded-xl font-label-md text-label-md flex items-center justify-center gap-2 transition-colors" id="requestChangesBtn" onclick="triggerRequestChanges()">
+<span class="material-symbols-outlined text-[18px]">replay</span>
+<span>Request Changes / Re-run Checks</span>
+</button>
+</div>
+</div>
+<!-- Interactive Diff Drawer Modal (Hidden by Default) -->
+<div class="hidden fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-inverse-surface/40 backdrop-blur-sm p-space-sm" id="diffModal">
+<div class="bg-surface-container-lowest w-full max-w-md rounded-2xl shadow-xl overflow-hidden flex flex-col max-h-[751px]">
+<div class="p-space-md bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">difference</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Inspection: Code Diff</span>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface hover:bg-surface-dim" onclick="document.getElementById('diffModal').classList.add('hidden')">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="p-space-md overflow-y-auto flex flex-col gap-3 font-mono text-body-sm">
+<div class="text-[12px] text-on-surface-variant font-sans flex items-center justify-between pb-1">
+<span>auth/password-reset.ts</span>
+<span class="text-tertiary">+142 -6</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-3 text-[11px] leading-5 overflow-x-auto space-y-1">
+<div class="text-on-surface-variant">// Generate secure cryptographic reset token</div>
+<div class="text-error bg-error-container/30 px-1 rounded">- const token = Math.random().toString(36);</div>
+<div class="text-tertiary bg-tertiary-fixed/30 px-1 rounded">+ const tokenBuffer = crypto.randomBytes(32);</div>
+<div class="text-tertiary bg-tertiary-fixed/30 px-1 rounded">+ const token = tokenBuffer.toString('hex');</div>
+<div class="text-tertiary bg-tertiary-fixed/30 px-1 rounded">+ const hashedToken = await bcrypt.hash(token, 10);</div>
+<div class="text-on-surface-variant">  await db.tokenStore.insert({ userId, hashedToken, expiresAt });</div>
+</div>
+<div class="p-3 bg-secondary-fixed text-on-secondary-fixed rounded-xl flex items-center gap-2 font-sans text-label-sm">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Verified against NIST Special Pub 800-63B standards</span>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-low flex justify-end">
+<button class="px-4 py-2 bg-primary text-on-primary rounded-lg font-label-md text-label-md" onclick="document.getElementById('diffModal').classList.add('hidden')">
+          Done Reviewing
+        </button>
+</div>
+</div>
+</div>
+<!-- Confirmation Modal Dialog -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center bg-inverse-surface/40 backdrop-blur-sm p-space-md" id="confirmationModal">
+<div class="bg-surface-container-lowest w-full max-w-sm rounded-2xl p-space-lg shadow-2xl flex flex-col gap-space-md">
+<!-- Modal Header Icon -->
+<div class="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center mx-auto">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+</div>
+<div class="text-center flex flex-col gap-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Confirm Release to Staging</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          You are about to merge <span class="font-mono text-primary font-medium">feat/password-reset</span> into <span class="font-mono text-on-surface font-medium">main</span>.
+        </p>
+</div>
+<!-- Summary Confirmation Card -->
+<div class="p-3 rounded-lg bg-surface-container-low text-on-surface flex flex-col gap-1.5 font-label-sm text-label-sm">
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Automated Deployment:</span>
+<span class="text-tertiary font-semibold">Immediate</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Cryptographic Record:</span>
+<span class="font-mono text-on-surface">#0x7b...9f8</span>
+</div>
+</div>
+<!-- Action Buttons inside Modal -->
+<div class="flex flex-col gap-2 pt-1">
+<button class="w-full h-11 bg-tertiary hover:bg-tertiary-container text-on-tertiary rounded-xl font-label-lg text-label-lg flex items-center justify-center gap-2 shadow transition-all active:scale-[0.98]" id="confirmMergeBtn" onclick="executeMergeRelease()">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Confirm &amp; Merge</span>
+</button>
+<button class="w-full h-10 bg-surface-container text-on-surface hover:bg-surface-container-high rounded-xl font-label-md text-label-md transition-colors" onclick="document.getElementById('confirmationModal').classList.add('hidden')">
+          Cancel
+        </button>
+</div>
+</div>
+</div>
+<!-- Interactive JavaScript Handling Micro-delight and State -->
+<script>
+    function triggerRequestChanges() {
+      const btn = document.getElementById('requestChangesBtn');
+      btn.innerHTML = `<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>Dispatched to Agent...</span>`;
+      btn.classList.add('opacity-75');
+      setTimeout(() => {
+        btn.innerHTML = `<span class="material-symbols-outlined text-[18px] text-tertiary">check</span><span>Prompt Sent to Agent</span>`;
+        setTimeout(() => {
+          btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">replay</span><span>Request Changes / Re-run Checks</span>`;
+          btn.classList.remove('opacity-75');
+        }, 2000);
+      }, 1000);
+    }
+
+    function executeMergeRelease() {
+      const btn = document.getElementById('confirmMergeBtn');
+      btn.innerHTML = `<span class="material-symbols-outlined text-[18px] animate-spin">autorenew</span><span>Deploying to Cluster...</span>`;
+      setTimeout(() => {
+        btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">done_all</span><span>Shipped! Redirecting...</span>`;
+        btn.classList.replace('bg-tertiary', 'bg-primary');
+        setTimeout(() => {
+          document.getElementById('confirmationModal').classList.add('hidden');
+          alert('🚀 Release successfully dispatched! Pipeline build #4092 is live on staging.');
+        }, 1200);
+      }, 1400);
+    }
+  </script>
+</div></main></body></html>

@@ -1,0 +1,6 @@
+{
+  "name": "Chakra Agent - Autonomous Multi-Agent Engineering",
+  "description": "Next-gen multi-agent software engineering framework. Build, verify, and recover with total certainty using coordinated AI agents and isolated sandboxes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
